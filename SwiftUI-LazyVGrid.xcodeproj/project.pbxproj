@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA63D98E270CB3E500BAD2B7 /* AvatarProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA63D98D270CB3E500BAD2B7 /* AvatarProfileView.swift */; };
 		AACABED8270C5C0300D599D4 /* SwiftUI_LazyVGridApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACABED7270C5C0300D599D4 /* SwiftUI_LazyVGridApp.swift */; };
 		AACABEDF270C5C0400D599D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AACABEDE270C5C0400D599D4 /* Preview Assets.xcassets */; };
 		AACABEE9270C5C0400D599D4 /* SwiftUI_LazyVGridTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACABEE8270C5C0400D599D4 /* SwiftUI_LazyVGridTests.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA63D98D270CB3E500BAD2B7 /* AvatarProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarProfileView.swift; sourceTree = "<group>"; };
 		AACABED4270C5C0300D599D4 /* SwiftUI-LazyVGrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-LazyVGrid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AACABED7270C5C0300D599D4 /* SwiftUI_LazyVGridApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_LazyVGridApp.swift; sourceTree = "<group>"; };
 		AACABEDE270C5C0400D599D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -77,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA63D98C270CB39500BAD2B7 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				AA63D98D270CB3E500BAD2B7 /* AvatarProfileView.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
 		AACABECB270C5C0300D599D4 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +116,7 @@
 				AACABF02270C5D7100D599D4 /* ViewModel */,
 				AACABF09270C5E6300D599D4 /* Mocks */,
 				AACABEDD270C5C0400D599D4 /* Preview Content */,
+				AA63D98C270CB39500BAD2B7 /* ProfileView */,
 			);
 			path = "SwiftUI-LazyVGrid";
 			sourceTree = "<group>";
@@ -299,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AACABF0F270C5EED00D599D4 /* MockData.swift in Sources */,
+				AA63D98E270CB3E500BAD2B7 /* AvatarProfileView.swift in Sources */,
 				AACABF0D270C5E8800D599D4 /* Avatar.swift in Sources */,
 				AACABED8270C5C0300D599D4 /* SwiftUI_LazyVGridApp.swift in Sources */,
 				AACABF11270C5F3000D599D4 /* AvatarView.swift in Sources */,

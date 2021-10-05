@@ -9,12 +9,15 @@ import SwiftUI
 struct AvatarView: View {
     
     let avatar: Avatar
+    var width: CGFloat
+    var height: CGFloat
     
     var body: some View {
         VStack {
             Image(avatar.imageName)
                 .resizable()
-                .frame(width: 90, height: 90, alignment: .center)
+                .frame(width: width, height: height, alignment: .center)
+                .scaledToFit()
             Text(avatar.name)
                 .font(.body )
                 .fontWeight(.regular)
