@@ -5,3 +5,7 @@ Exemplify a LazyVGrid in SwiftUI in a MVVM pattern with Mock Data and images in 
 All those beautiful avatar images are the craft of SilviaP Design
 
 https://pixabay.com/users/silviap_design-1583911/?tab=popular&pagi=1
+
+## Screenshots Samples
+![Login](/Screenshots/MainGridViewiPhone12Pro.png.png)
+
