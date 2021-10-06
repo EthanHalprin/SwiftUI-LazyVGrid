@@ -14,6 +14,8 @@ struct AvatarProfileView: View {
     var body: some View {
         VStack(spacing: 40) {
             
+            XButton()
+            
             Spacer()
             
             AvatarView(avatar: avatar,
@@ -28,6 +30,21 @@ struct AvatarProfileView: View {
 
             AvatarProfileButton()
         }
+    }
+}
+
+struct XButton: View {
+    var body: some View {
+        HStack {
+            Spacer()
+            Button {
+            } label: {
+                Image(systemName: "xmark")
+                    .foregroundColor(.white)
+                    .imageScale(.large)
+                    .frame(width: 44, height: 44)
+            }
+        }.padding()
     }
 }
 
