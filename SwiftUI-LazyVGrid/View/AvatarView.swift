@@ -22,9 +22,9 @@ struct AvatarView: View {
                 .scaledToFit()
             Text(avatar.name)
                 .font(font)
-                .fontWeight(.regular)
+                .fontWeight(.bold)
                 .foregroundColor(self.textColor)
-                .scaledToFit()
+                //.scaledToFit()
                 .minimumScaleFactor(0.8)
         }
         .padding()

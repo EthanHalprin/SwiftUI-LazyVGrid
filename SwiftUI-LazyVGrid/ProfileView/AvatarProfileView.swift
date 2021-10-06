@@ -12,22 +12,16 @@ struct AvatarProfileView: View {
     @Binding var avatar: Avatar
     
     var body: some View {
+        
         VStack(spacing: 40) {
-            
             XButton()
-            
-            Spacer()
-            
             AvatarView(avatar: avatar,
-                       width: 200,
-                       height: 200,
+                       width: 144,
+                       height: 192,
                        font: .title3,
                        textColor: Color.blue)
-            
             AvatarDescriptionText(description: avatar.description)
-            
             Spacer()
-
             AvatarProfileButton()
         }
     }
@@ -42,9 +36,10 @@ struct XButton: View {
                 Image(systemName: "xmark")
                     .foregroundColor(.white)
                     .imageScale(.large)
-                    .frame(width: 44, height: 44)
+                    .frame(width: 44, height: 4)
             }
-        }.padding()
+        }
+        .padding()
     }
 }
 
