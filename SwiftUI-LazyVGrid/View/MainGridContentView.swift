@@ -18,7 +18,7 @@ struct MainGridContentView: View {
             ScrollView {
                 LazyVGrid(columns: columns) {
                     ForEach(MockData.avatars, id: \.id) { avatar in
-                        AvatarView(avatar: avatar, width: 90, height: 90)
+                        AvatarView(avatar: avatar, width: 90, height: 90, font: .callout)
                     }
                 }
             }

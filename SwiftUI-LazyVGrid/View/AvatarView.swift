@@ -11,6 +11,7 @@ struct AvatarView: View {
     let avatar: Avatar
     var width: CGFloat
     var height: CGFloat
+    var font: Font
     
     var body: some View {
         VStack {
@@ -19,7 +20,7 @@ struct AvatarView: View {
                 .frame(width: width, height: height, alignment: .center)
                 .scaledToFit()
             Text(avatar.name)
-                .font(.body )
+                .font(font)
                 .fontWeight(.regular)
                 .scaledToFit()
                 .minimumScaleFactor(0.8)
