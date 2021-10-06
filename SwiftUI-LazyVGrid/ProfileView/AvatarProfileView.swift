@@ -13,10 +13,52 @@ struct AvatarProfileView: View {
     
     var body: some View {
         VStack(spacing: 40) {
-            AvatarView(avatar: avatar, width: 200, height: 200, font: .title3)
+            
+            Spacer()
+            
+            AvatarView(avatar: avatar,
+                       width: 200,
+                       height: 200,
+                       font: .title3,
+                       textColor: Color.blue)
+            
             AvatarDescriptionText(description: avatar.description)
+            
+            Spacer()
+
             AvatarProfileButton()
-        }.ignoresSafeArea()
+        }
+    }
+}
+
+struct AvatarDescriptionText: View {
+    
+    var description: String
+    
+    var body: some View {
+        Text(description)
+            .padding()
+            .font(.body)
+    }
+}
+
+struct AvatarProfileButton: View {
+    var body: some View {
+        Button(action: {
+            print("Button action")
+        }) {
+            HStack {
+                Image(systemName: "info.circle")
+                Text("MORE")
+                    .font(.title3)
+                    .fontWeight(.semibold)
+            }
+            .frame(width: 250, height: 35, alignment: .center)
+            .padding(10.0)
+            .background(Color(red: 0.1, green: 0.1, blue: 0.8))
+            .foregroundColor(Color.white)
+            .cornerRadius(10.0)
+        }
     }
 }
 
@@ -34,35 +76,4 @@ struct AvatarProfileView_Previews: PreviewProvider {
           AvatarProfileView(avatar: $avatar)
       }
   }
-}
-
-struct AvatarProfileButton: View {
-    var body: some View {
-        Button(action: /* ("Delete", role: .destructive) */  {
-            print("Button action")
-        }) {
-            HStack {
-                Image(systemName: "person.crop.rectangle.stack")
-                Text("Avatars Grid")
-                    .font(.title3)
-                    .fontWeight(.bold)
-            }
-            .frame(width: 200, height: 30, alignment: .center)
-            .padding(10.0)
-            .background(Color(red: 0.1, green: 0.1, blue: 0.8))
-            .foregroundColor(Color.white)
-            .clipShape(Capsule())
-        }
-    }
-}
-
-struct AvatarDescriptionText: View {
-    
-    var description: String
-    
-    var body: some View {
-        Text(description)
-            .padding()
-            .font(.body)
-    }
 }
