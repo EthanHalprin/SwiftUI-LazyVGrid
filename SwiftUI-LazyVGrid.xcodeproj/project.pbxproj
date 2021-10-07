@@ -18,6 +18,7 @@
 		AACABF0D270C5E8800D599D4 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACABF0C270C5E8800D599D4 /* Avatar.swift */; };
 		AACABF0F270C5EED00D599D4 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACABF0E270C5EED00D599D4 /* MockData.swift */; };
 		AACABF11270C5F3000D599D4 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACABF10270C5F3000D599D4 /* AvatarView.swift */; };
+		AAE95B1A270F2C2E007459EB /* MainGridContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE95B19270F2C2E007459EB /* MainGridContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		AACABF0C270C5E8800D599D4 /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
 		AACABF0E270C5EED00D599D4 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		AACABF10270C5F3000D599D4 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		AAE95B19270F2C2E007459EB /* MainGridContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGridContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 		AACABF02270C5D7100D599D4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				AAE95B19270F2C2E007459EB /* MainGridContentViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 			files = (
 				AACABF0F270C5EED00D599D4 /* MockData.swift in Sources */,
 				AA63D98E270CB3E500BAD2B7 /* AvatarProfileView.swift in Sources */,
+				AAE95B1A270F2C2E007459EB /* MainGridContentViewModel.swift in Sources */,
 				AACABF0D270C5E8800D599D4 /* Avatar.swift in Sources */,
 				AACABED8270C5C0300D599D4 /* SwiftUI_LazyVGridApp.swift in Sources */,
 				AACABF11270C5F3000D599D4 /* AvatarView.swift in Sources */,

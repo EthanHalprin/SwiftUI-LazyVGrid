@@ -9,12 +9,13 @@ import SwiftUI
 
 struct AvatarProfileView: View {
     
-    @Binding var avatar: Avatar
+    var avatar: Avatar
+    @Binding var isShowing: Bool
     
     var body: some View {
         
         VStack(spacing: 40) {
-            XButton()
+            XButton(isShow: $isShowing)
             AvatarView(avatar: avatar,
                        width: 144,
                        height: 192,
@@ -28,10 +29,14 @@ struct AvatarProfileView: View {
 }
 
 struct XButton: View {
+    
+    @Binding var isShow: Bool
+
     var body: some View {
         HStack {
             Spacer()
             Button {
+                isShow = false
             } label: {
                 Image(systemName: "xmark")
                     .foregroundColor(.white)
@@ -50,7 +55,7 @@ struct AvatarDescriptionText: View {
     var body: some View {
         Text(description)
             .padding()
-            .font(.body)
+            .font(.callout)
     }
 }
 
@@ -61,9 +66,9 @@ struct AvatarProfileButton: View {
         }) {
             HStack {
                 Image(systemName: "info.circle")
-                Text("MORE")
+                Text("More Info")
                     .font(.title3)
-                    .fontWeight(.semibold)
+                    .fontWeight(.regular)
             }
             .frame(width: 250, height: 35, alignment: .center)
             .padding(10.0)
@@ -85,7 +90,7 @@ struct AvatarProfileView_Previews: PreviewProvider {
       @State private var avatar = MockData.sampleAvatar
 
       var body: some View {
-          AvatarProfileView(avatar: $avatar)
+          AvatarProfileView(avatar: avatar, isShowing: .constant(false))
       }
   }
 }
