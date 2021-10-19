@@ -13,14 +13,12 @@ struct AvatarProfileView: View {
     @Binding var isShowing: Bool
     
     var body: some View {
-        
         VStack(spacing: 40) {
             XButton(isShow: $isShowing)
             AvatarView(avatar: avatar,
                        width: 144,
                        height: 192,
-                       font: .title3,
-                       textColor: Color.blue)
+                       font: .title3)
             AvatarDescriptionText(description: avatar.description)
             Spacer()
             AvatarProfileButton()
@@ -39,7 +37,7 @@ struct XButton: View {
                 isShow = false
             } label: {
                 Image(systemName: "xmark")
-                    .foregroundColor(.white)
+                    .foregroundColor(Color(UIColor.systemRed))
                     .imageScale(.large)
                     .frame(width: 44, height: 4)
             }
@@ -72,7 +70,7 @@ struct AvatarProfileButton: View {
             }
             .frame(width: 250, height: 35, alignment: .center)
             .padding(10.0)
-            .background(Color(red: 0.1, green: 0.1, blue: 0.8))
+            .background(Color(UIColor.systemIndigo)) //(Color(red: 0.1, green: 0.1, blue: 0.8))
             .foregroundColor(Color.white)
             .cornerRadius(10.0)
         }
@@ -81,8 +79,9 @@ struct AvatarProfileButton: View {
 
 struct AvatarProfileView_Previews: PreviewProvider {
   static var previews: some View {
-      PreviewWrapper()
-          .preferredColorScheme(.dark)
+      ForEach(ColorScheme.allCases, id: \.self) {
+          PreviewWrapper().preferredColorScheme($0)
+      }
   }
 
   struct PreviewWrapper: View {

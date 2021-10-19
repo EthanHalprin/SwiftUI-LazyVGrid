@@ -12,7 +12,6 @@ struct AvatarView: View {
     var width: CGFloat
     var height: CGFloat
     var font: Font
-    var textColor = Color.white
     
     var body: some View {
         VStack {
@@ -23,7 +22,7 @@ struct AvatarView: View {
             Text(avatar.name)
                 .font(font)
                 .fontWeight(.bold)
-                .foregroundColor(self.textColor)
+                .foregroundColor(Color(UIColor.systemIndigo))
                 //.scaledToFit()
                 .minimumScaleFactor(0.8)
         }

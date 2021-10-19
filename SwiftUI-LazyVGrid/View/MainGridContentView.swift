@@ -42,7 +42,8 @@ struct MainGridContentView: View {
 
 struct MainGridContentView_Previews: PreviewProvider {
     static var previews: some View {
-        MainGridContentView()
-            .preferredColorScheme(.dark)
+        ForEach(ColorScheme.allCases, id: \.self) {
+            MainGridContentView().preferredColorScheme($0)
+        }
     }
 }

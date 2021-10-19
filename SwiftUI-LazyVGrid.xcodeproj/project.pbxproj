@@ -116,9 +116,9 @@
 				AACABF01270C5D6700D599D4 /* Model */,
 				AACABF03270C5D8000D599D4 /* View */,
 				AACABF02270C5D7100D599D4 /* ViewModel */,
+				AA63D98C270CB39500BAD2B7 /* ProfileView */,
 				AACABF09270C5E6300D599D4 /* Mocks */,
 				AACABEDD270C5C0400D599D4 /* Preview Content */,
-				AA63D98C270CB39500BAD2B7 /* ProfileView */,
 			);
 			path = "SwiftUI-LazyVGrid";
 			sourceTree = "<group>";
