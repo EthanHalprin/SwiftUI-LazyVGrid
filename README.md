@@ -1,5 +1,5 @@
 # SwiftUI-LazyVGrid
-Exemplify a LazyVGrid in SwiftUI in a MVVM pattern with Mock Data and images in assets.
+Exemplify a LazyVGrid in SwiftUI App designed with MVVM pattern
 
 ## Screenshots Samples
 ![Login](/Screenshots/MainGridViewiPhone12Pro.png)
